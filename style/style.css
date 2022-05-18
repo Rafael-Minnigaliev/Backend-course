@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Larsseit", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  padding: 0 calc(50% - 565px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F4F9E2;
+  padding-top: 27px;
+  align-items: start;
+}
+.header__title {
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #62D0DF;
+}
+.header__nav {
+  padding-top: 11px;
+  width: 245px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #22356F;
+  padding: 0 6px 12px;
+}
+.header__item:hover {
+  padding: 0 6px 12px;
+  border-bottom: 1px solid #22356F;
+}
+.header__btn {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #62D0DF;
+  border: none;
+  padding: 20px 30px 19px;
+  border-radius: 28px;
+}
+
+.promo {
+  background-color: #F4F9E2;
+  padding-top: 164px;
+  padding-bottom: 77px;
+}
+.promo__wrap {
+  width: 484px;
+}
+.promo__heading {
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #62D0DF;
+}
+.promo__title {
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.035em;
+  color: #22356F;
+  padding: 47px 0 78px;
+}
+.promo__text {
+  font-size: 24px;
+  line-height: 42px;
+  color: #22356F;
+  padding-bottom: 63px;
+}
+.promo__btn {
+  display: flex;
+}
+.promo__btn_item {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  color: #F9B640;
+  background-color: inherit;
+  border: none;
+  width: 150px;
+  margin-right: 28px;
+  padding: 17px 0;
+}
+.promo__btn_item:hover {
+  color: #FFFFFF;
+  background-color: #F9B640;
+}
+
+/* tablet */
+@media (max-width: 1180px) {
+  .center {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* mobile */
+@media (max-width: 787px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__title {
+    display: none;
+  }
+  .header__nav {
+    padding: 50px 0;
+    width: 60%;
+  }
+  .header__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .promo__wrap {
+    width: 90%;
+  }
+  .promo__heading {
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .promo__btn {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
