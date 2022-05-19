@@ -18,7 +18,7 @@ $a = 3;
 $b = 4;
 $sum = $a + $b;
 
-echo "Сумма = $sum <br> Тип = ";
+echo 'Сумма = ' . $sum . '<br> Тип = ';
 var_dump($sum);
 echo '<br>';
 
@@ -30,7 +30,7 @@ $x = 7.3;
 // 6. Создайте переменную $result, и поместите в нее результат сложения переменных $x и $number1. Выведите получившееся значение и его тип.
 $result = $x + $number1;
 
-echo "Сумма = $result <br> Тип = ";
+echo 'Сумма = ' . $result . '<br> Тип = ';
 var_dump($result);
 echo '<br>';
 
