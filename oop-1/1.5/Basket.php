@@ -3,7 +3,7 @@ namespace oop\Basket;
 
 use oop\Product\Product;
 
-require_once "Product.php";
+require_once 'Product.php';
 
 class Basket{
     private $goods = [];

@@ -2,7 +2,7 @@
 
 use oop\HungryCat\HungryCat;
 
-include "HungryCat.php";
+include 'HungryCat.php';
 
 
 $cat1 = new HungryCat('Барсик', 'серый', 'рыба');

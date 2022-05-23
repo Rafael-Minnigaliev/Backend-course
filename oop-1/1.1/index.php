@@ -4,9 +4,9 @@ use oop\Cat\Cat;
 use oop\Dog\Dog;
 use oop\Fish\Fish;
 
-include "Cat.php";
-include "Dog.php";
-include "Fish.php";
+include 'Cat.php';
+include 'Dog.php';
+include 'Fish.php';
 
 
 $cat1 = new Cat('Мурзик');

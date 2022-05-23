@@ -6,12 +6,12 @@ use oop\Order\Order;
 use oop\Product\Product;
 use oop\User\User;
 
-require_once "Basket.php";
-require_once "Product.php";
-require_once "BasketPosition.php";
-require_once "Order.php";
-require_once "../1.4/User.php";
-require_once "../1.4/index.php";
+require_once 'Basket.php';
+require_once 'Product.php';
+require_once 'BasketPosition.php';
+require_once 'Order.php';
+require_once '../1.4/User.php';
+require_once '../1.4/index.php';
 
 $basket = new Basket();
 

@@ -2,7 +2,7 @@
 
 use oop\ToyFactory\ToyFactory;
 
-include "ToyFactory.php";
+include 'ToyFactory.php';
 
 $nameToys = ['Пистолет', 'Кукла', 'Юла', 'Машинка', 'Мяч'];
 $tFactoty = new ToyFactory();

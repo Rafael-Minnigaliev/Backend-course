@@ -4,9 +4,9 @@ use oop\Censor\Censor;
 use oop\Notification\Notification;
 use oop\User\User;
 
-require_once "User.php";
-include "Censor.php";
-include "Notification.php";
+require_once 'User.php';
+include 'Censor.php';
+include 'Notification.php';
 
 function notify(User $user, $message){
     if ($user->isAdult()){
