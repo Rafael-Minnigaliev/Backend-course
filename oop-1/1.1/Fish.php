@@ -1,10 +1,14 @@
 <?php
-namespace oop\Fish;
 
-class Fish{
-    public $name;
+namespace WPTT\Oop\Fish;
 
-    public function __construct($name){
-        $this->name = $name;
-    }
+
+class Fish
+{
+	public $name;
+
+	public function __construct($name)
+	{
+		$this->name = $name;
+	}
 }

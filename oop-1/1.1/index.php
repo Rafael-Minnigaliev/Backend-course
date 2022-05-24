@@ -1,12 +1,12 @@
 <?php
 
-use oop\Cat\Cat;
-use oop\Dog\Dog;
-use oop\Fish\Fish;
+use WPTT\Oop\Cat\Cat;
+use WPTT\Oop\Dog\Dog;
+use WPTT\Oop\Fish\Fish;
 
-include 'Cat.php';
-include 'Dog.php';
-include 'Fish.php';
+require_once 'Cat.php';
+require_once 'Dog.php';
+require_once 'Fish.php';
 
 
 $cat1 = new Cat('Мурзик');

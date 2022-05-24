@@ -1,12 +1,15 @@
 <?php
-namespace oop\ToyFactory;
 
-use oop\Toy\Toy;
+namespace WPTT\Oop\ToyFactory;
 
-include 'Toy.php';
+use WPTT\Oop\Toy\Toy;
 
-class ToyFactory{
-    public function createToy($name){
-        return new Toy($name, rand(10, 100));
-    }
+require_once 'Toy.php';
+
+class ToyFactory
+{
+	public function createToy($name)
+	{
+		return new Toy($name, rand(10, 100));
+	}
 }

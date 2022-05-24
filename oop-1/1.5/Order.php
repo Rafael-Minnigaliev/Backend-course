@@ -1,20 +1,25 @@
 <?php
-namespace oop\Order;
 
-class Order{
-    private $basket;
-    private $deliveryPrice;
+namespace WPTT\Oop\Order;
 
-    public function __construct($basket, $deliveryPrice){
-        $this->basket = $basket;
-        $this->deliveryPrice = $deliveryPrice;
-    }
+class Order
+{
+	private $basket;
+	private $deliveryPrice;
 
-    public function getBasket(){
-        return $this->basket;
-    }
+	public function __construct($basket, $deliveryPrice)
+	{
+		$this->basket = $basket;
+		$this->deliveryPrice = $deliveryPrice;
+	}
 
-    public function getPrice() {
-        return $this->deliveryPrice;
-    }
+	public function getBasket()
+	{
+		return $this->basket;
+	}
+
+	public function getPrice()
+	{
+		return $this->deliveryPrice;
+	}
 }

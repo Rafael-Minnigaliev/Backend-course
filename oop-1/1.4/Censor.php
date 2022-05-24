@@ -1,8 +1,11 @@
 <?php
-namespace oop\Censor;
 
-class Censor{
-    public function censor($message){
-        return $message . ' - процензурировано';
-    }
+namespace WPTT\Oop\Censor;
+
+class Censor
+{
+	public function censor($message)
+	{
+		return $message . ' - процензурировано';
+	}
 }

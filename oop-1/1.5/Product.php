@@ -1,20 +1,25 @@
 <?php
-namespace oop\Product;
 
-class Product{
-    private $name;
-    private $price;
+namespace WPTT\Oop\Product;
 
-    public function __construct($name, $price){
-        $this->name = $name;
-        $this->price = $price;
-    }
+class Product
+{
+	private $name;
+	private $price;
 
-    public function getName(){
-        return $this->name;
-    }
+	public function __construct($name, $price)
+	{
+		$this->name = $name;
+		$this->price = $price;
+	}
 
-    public function getPrice(){
-        return $this->price;
-    }
+	public function getName()
+	{
+		return $this->name;
+	}
+
+	public function getPrice()
+	{
+		return $this->price;
+	}
 }

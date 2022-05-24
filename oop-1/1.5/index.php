@@ -1,10 +1,9 @@
 <?php
 
-use BasketPosition\BasketPosition;
-use oop\Basket\Basket;
-use oop\Order\Order;
-use oop\Product\Product;
-use oop\User\User;
+use WPTT\Oop\Basket\Basket;
+use WPTT\Oop\Order\Order;
+use WPTT\Oop\Product\Product;
+use WPTT\Oop\User\User;
 
 require_once 'Basket.php';
 require_once 'Product.php';
@@ -21,23 +20,19 @@ $product3 = new Product('фломастеры', 100);
 $product4 = new Product('ластик', 20);
 $product5 = new Product('карандаш', 30);
 
-$basaketPosition1 = new BasketPosition(['name' => $product1->getName(), 'price' => $product1->getPrice()], 5);
-$basaketPosition2 = new BasketPosition(['name' => $product2->getName(), 'price' => $product2->getPrice()], 5);
-$basaketPosition3 = new BasketPosition(['name' => $product3->getName(), 'price' => $product3->getPrice()], 5);
-$basaketPosition4 = new BasketPosition(['name' => $product4->getName(), 'price' => $product4->getPrice()], 5);
-$basaketPosition5 = new BasketPosition(['name' => $product5->getName(), 'price' => $product5->getPrice()], 5);
-
-$basket->addProduct($product1, $basaketPosition1->getQuantity());
-$basket->addProduct($product2, $basaketPosition2->getQuantity());
-$basket->addProduct($product3, $basaketPosition3->getQuantity());
-$basket->addProduct($product4, $basaketPosition4->getQuantity());
-$basket->addProduct($product5, $basaketPosition5->getQuantity());
+$basket->addProduct($product1, 5);
+$basket->addProduct($product2, 3);
+$basket->addProduct($product3, 4);
+$basket->addProduct($product4, 1);
+$basket->addProduct($product5, 2);
 
 $order = new Order($basket, 150);
 
-echo 'Заказ, на сумму: ' . $order->getBasket()->getPrice() . ' Состав: ' . $order->getBasket()->describe();
+$text = $order->getBasket()->getPrice() . ' Состав: ' . $order->getBasket()->describe();
+
+echo 'Заказ, на сумму: ' . $text;
 echo '<hr>';
 
 $user3 = new User('Николай', 'kolya@email.ru', 8888888, 49);
 
-notify($user3, 'Для вас создан заказ, на сумму: ' . $order->getBasket()->getPrice() . ' Состав: ' . $order->getBasket()->describe());
+notify($user3, 'Для вас создан заказ, на сумму: ' . $text);

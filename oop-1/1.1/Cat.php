@@ -1,10 +1,13 @@
 <?php
-namespace oop\Cat;
 
-class Cat{
-    public $name;
+namespace WPTT\Oop\Cat;
 
-    public function __construct($name){
-        $this->name = $name;
-    }
+class Cat
+{
+	public $name;
+
+	public function __construct($name)
+	{
+		$this->name = $name;
+	}
 }

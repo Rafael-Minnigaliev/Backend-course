@@ -1,14 +1,18 @@
 <?php
-namespace oop\Notification;
 
-class Notification{
-    public $notificationChannel;
+namespace WPTT\Oop\Notification;
 
-    public function __construct(string $notificationChannel){
-        $this->notificationChannel = $notificationChannel;
-    }
+class Notification
+{
+	public $notificationChannel;
 
-    public function sendTo($name, $contact, $message){
-        echo 'Уведомление клиенту: ' . $name . ' на ' . $this->notificationChannel . ' ' . $contact . ': ' . $message . '<br>';
-    }
+	public function __construct(string $notificationChannel)
+	{
+		$this->notificationChannel = $notificationChannel;
+	}
+
+	public function sendTo($name, $contact, $message)
+	{
+		echo 'Уведомление клиенту: ' . $name . ' на ' . $this->notificationChannel . ' ' . $contact . ': ' . $message . '<br>';
+	}
 }

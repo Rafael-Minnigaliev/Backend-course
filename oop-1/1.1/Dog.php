@@ -1,10 +1,13 @@
 <?php
-namespace oop\Dog;
 
-class Dog{
+namespace WPTT\Oop\Dog;
+
+class Dog
+{
     public $name;
 
-    public function __construct($name){
+    public function __construct($name)
+    {
         $this->name = $name;
     }
 }

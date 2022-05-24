@@ -1,12 +1,15 @@
 <?php
-namespace oop\Toy;
 
-class Toy{
-    public $name;
-    public $price;
+namespace WPTT\Oop\Toy;
 
-    public function __construct($name, $price){
-        $this->name = $name;
-        $this->price = $price;
-    }
+class Toy
+{
+	public $name;
+	public $price;
+
+	public function __construct($name, $price)
+	{
+		$this->name = $name;
+		$this->price = $price;
+	}
 }

@@ -1,8 +1,8 @@
 <?php
 
-use oop\HungryCat\HungryCat;
+use WPTT\Oop\HungryCat\HungryCat;
 
-include 'HungryCat.php';
+require_once 'HungryCat.php';
 
 
 $cat1 = new HungryCat('Барсик', 'серый', 'рыба');
