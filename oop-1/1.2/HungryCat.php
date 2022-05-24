@@ -18,9 +18,9 @@ class HungryCat
 	public function eat($food)
 	{
 		$text = 'Голодный кот ' . $this->name . ', особые приметы: цвет - ' . $this->color . ', съел ' . $food;
-		if (!$food == $this->favoriteFood) {
-			$text .= ' и замурчал \'мррррр\' от своей любимой еды <br>';
+		if ($food == $this->favoriteFood) {
+			$text .= ' и замурчал \'мррррр\' от своей любимой еды';
 		} 
-		return $text;
+		return $text . '<br>';
 	}
 }
