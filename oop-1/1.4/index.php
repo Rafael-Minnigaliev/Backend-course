@@ -10,12 +10,15 @@ require_once 'Notification.php';
 
 function notify(User $user, $message)
 {
+	if($user->isAdult()){
+		$censor = new Censor();
+		$message = $censor->censor($message);
+	}
 	$notEmail = new Notification($user->getEmail());
-	$censor = new Censor();
-	$notEmail->sendTo($user->getName(), 'контакт', $user->isAdult() ? $message : $censor->censor($message));
+	$notEmail->sendTo($user->getName(), 'контакт', $message);
 	if ($user->getPhone()) {
 		$notPhone = new Notification($user->getPhone());
-		$notPhone->sendTo($user->getName(), 'контакт', $user->isAdult() ? $message : $censor->censor($message));
+		$notPhone->sendTo($user->getName(), 'контакт', $message);
 	}
 }
 

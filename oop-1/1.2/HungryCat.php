@@ -19,9 +19,8 @@ class HungryCat
 	{
 		$text = 'Голодный кот ' . $this->name . ', особые приметы: цвет - ' . $this->color . ', съел ' . $food;
 		if (!$food == $this->favoriteFood) {
-			return $text . ' и замурчал \'мррррр\' от своей любимой еды <br>';
-		} else {
-			return $text . '<br>';
-		}
+			$text .= ' и замурчал \'мррррр\' от своей любимой еды <br>';
+		} 
+		return $text;
 	}
 }

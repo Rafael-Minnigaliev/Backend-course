@@ -34,6 +34,6 @@ class User
 
 	public function isAdult()
 	{
-		return $this->age >= 18 ? true : false;
+		return $this->age >= 18;
 	}
 }
