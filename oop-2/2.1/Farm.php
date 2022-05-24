@@ -1,7 +1,7 @@
 <?php
-namespace oop\Farm;
+namespace WPTT\Oop\Farm;
 
-use oop\Animal\Animal;
+use WPTT\Oop\Animal\Animal;
 
 require_once 'Animal.php';
 
@@ -9,12 +9,12 @@ class Farm{
     public $animals = [];
     
     public function addAnimal(Animal $animal){
-        $this->animals[] = $animal->getName();
+        $this->animals[] = $animal;
     }
 
     public function rollCall(){
         foreach($this->animals as $animal){
-            echo 'На ферме обитает: ' . $animal . '<br>';
+            echo 'На ферме обитает: ' . $animal->getName() . '<br>';
         }
     }
 }

@@ -1,15 +1,18 @@
 <?php
 
-namespace oop\Table;
+namespace WPTT\Oop\Table;
 
-class Table {
+class Table
+{
     private $name;
 
-    public function __construct($name){
+    public function __construct($name)
+    {
         $this->name = $name;
     }
 
-    public function burnWith($flame){
+    public function burnWith($flame)
+    {
         echo $this->name . ' ' . $flame->getFlame() . '<br>';
     }
 }

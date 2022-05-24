@@ -1,9 +1,11 @@
 <?php
 
-namespace oop\RedFlame;
+namespace WPTT\Oop\RedFlame;
 
-class RedFlame{
-    public function getFlame(){
+class RedFlame
+{
+    public function getFlame()
+    {
         return 'ярко горит';
     }
 }

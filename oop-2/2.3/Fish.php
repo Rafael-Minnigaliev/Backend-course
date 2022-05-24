@@ -1,15 +1,18 @@
 <?php
 
-namespace oop\Fish;
+namespace WPTT\Oop\Fish;
 
-class Fish{
+class Fish
+{
     private $name;
 
-    public function __construct($name){
+    public function __construct($name)
+    {
         $this->name = $name;
     }
 
-    public function burnWith($flame){
+    public function burnWith($flame)
+    {
         echo $this->name . ' ' . $flame->getFlame() . '<br>';
-    } 
+    }
 }

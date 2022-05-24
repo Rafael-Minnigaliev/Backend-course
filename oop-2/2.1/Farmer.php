@@ -1,22 +1,26 @@
 <?php
-namespace oop\Farmer;
 
-use oop\Animal\Animal;
-use oop\Bird\Bird;
-use oop\BirdFarm\BirdFarm;
-use oop\Farm\Farm;
+namespace WPTT\Oop\Farmer;
+
+use WPTT\Oop\Animal\Animal;
+use WPTT\Oop\Bird\Bird;
+use WPTT\Oop\BirdFarm\BirdFarm;
+use WPTT\Oop\Farm\Farm;
 
 require_once 'Animal.php';
 require_once 'Farm.php';
 require_once 'Bird.php';
 require_once 'BirdFarm.php';
 
-class Farmer{
-    public function addAnimal(Farm $farm, Animal $animal){
+class Farmer
+{
+    public function addAnimal(Farm $farm, Animal $animal)
+    {
         $farm->addAnimal($animal);
     }
 
-    public function rollCall(Farm $farm){
+    public function rollCall(Farm $farm)
+    {
         $farm->rollCall();
     }
 }
@@ -38,11 +42,11 @@ $animals = [
     new Animal('Собака')
 ];
 
-foreach($animals as $animal){
-    if($animal->isBird()){
+foreach ($animals as $animal) {
+    if ($animal->isBird()) {
         $farmer->addAnimal($birdFarm, $animal);
         $farmer->addAnimal($farm, $animal);
-    }else{
+    } else {
         $farmer->addAnimal($farm, $animal);
     }
 }

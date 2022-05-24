@@ -1,23 +1,25 @@
 <?php
 
-namespace oop\Forge;
+namespace WPTT\Oop\Forge;
 
-use oop\BlueFlame\BlueFlame;
-use oop\RedFlame\RedFlame;
-use oop\Smoke\Smoke;
+use WPTT\Oop\BlueFlame\BlueFlame;
+use WPTT\Oop\RedFlame\RedFlame;
+use WPTT\Oop\Smoke\Smoke;
 
 require_once 'BlueFlame.php';
 require_once 'RedFlame.php';
 require_once 'Smoke.php';
 
-class Forge{
-    public function burn($object){
+class Forge
+{
+    public function burn($object)
+    {
         $flame = [
             new BlueFlame(),
             new RedFlame(),
             new Smoke()
         ];
 
-        $object->burnWith($flame[rand(0,2)]);
+        $object->burnWith($flame[rand(0, 2)]);
     }
 }

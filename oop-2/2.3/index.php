@@ -1,9 +1,9 @@
 <?php
 
-use oop\Fish\Fish;
-use oop\Forge\Forge;
-use oop\Petrol\Petrol;
-use oop\Table\Table;
+use WPTT\Oop\Fish\Fish;
+use WPTT\Oop\Forge\Forge;
+use WPTT\Oop\Petrol\Petrol;
+use WPTT\Oop\Table\Table;
 
 require_once 'Forge.php';
 require_once 'Table.php';
@@ -18,9 +18,6 @@ $arr = [
     new Fish('Рыба')
 ];
 
-foreach($arr as $item){
+foreach ($arr as $item) {
     $forge->burn($item);
 }
-
-
-
