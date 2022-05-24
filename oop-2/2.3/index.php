@@ -19,5 +19,5 @@ $arr = [
 ];
 
 foreach ($arr as $item) {
-    $forge->burn($item);
+    echo $forge->burn($item);
 }

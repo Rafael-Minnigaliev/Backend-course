@@ -13,14 +13,16 @@ class BlackBox
 
     public function getData(int $accessLevel)
     {
+        $text = '';
         if ($accessLevel <= 1) {
-            echo 'Доступ запрещен <br>';
+            $text .= 'Доступ запрещен <br>';
         } elseif ($accessLevel > 1 && $accessLevel <= 3) {
-            echo $this->data[0] . ' Ваш уровень доступа не позволяет получить больше данных <br>';
+            $text .= current($this->data) . ' Ваш уровень доступа не позволяет получить больше данных <br>';
         } else {
             foreach ($this->data as $item) {
-                echo $item . '<br>';
+                $text .= $item;
             }
         }
+        return $text;
     }
 }

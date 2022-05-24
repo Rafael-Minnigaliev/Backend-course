@@ -2,7 +2,11 @@
 
 namespace WPTT\Oop\Petrol;
 
-class Petrol
+use WPTT\Oop\IBurning\IBurning;
+
+require_once 'IBurning.php';
+
+class Petrol implements IBurning
 {
     private $name;
 
@@ -13,6 +17,6 @@ class Petrol
 
     public function burnWith($flame)
     {
-        echo $this->name . ' ' . $flame->getFlame() . '<br>';
+        return $this->name . ' ' . $flame->getFlame() . '<br>';
     }
 }

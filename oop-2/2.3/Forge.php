@@ -20,6 +20,6 @@ class Forge
             new Smoke()
         ];
 
-        $object->burnWith($flame[rand(0, 2)]);
+        return $object->burnWith($flame[rand(0, 2)]);
     }
 }

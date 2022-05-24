@@ -1,5 +1,6 @@
 <?php
 
+use WPTT\Oop\BlackBox\BlackBox;
 use WPTT\Oop\Engineer\Engineer;
 use WPTT\Oop\Plane\Plane;
 
@@ -7,13 +8,12 @@ require_once 'BlackBox.php';
 require_once 'Plane.php';
 require_once 'Engineer.php';
 
-
-$plan = new Plane();
+$blackBox = new BlackBox();
+$plan = new Plane($blackBox);
 $plan->flyAndCrush();
 
 $blackBox = $plan->getBlackBox();
 
-for ($i = 1; $i <= 5; $i++) {
-    $engineer = new Engineer($i);
-    $engineer->decodeBox($blackBox);
-}
+$engineer = new Engineer(rand(1,5));
+echo $engineer->decodeBox($blackBox);
+

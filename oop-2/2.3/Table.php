@@ -2,7 +2,11 @@
 
 namespace WPTT\Oop\Table;
 
-class Table
+use WPTT\Oop\IBurning\IBurning;
+
+require_once 'IBurning.php';
+
+class Table implements IBurning
 {
     private $name;
 
@@ -13,6 +17,6 @@ class Table
 
     public function burnWith($flame)
     {
-        echo $this->name . ' ' . $flame->getFlame() . '<br>';
+        return $this->name . ' ' . $flame->getFlame() . '<br>';
     }
 }

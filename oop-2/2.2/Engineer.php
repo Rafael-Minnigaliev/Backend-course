@@ -17,6 +17,6 @@ class Engineer
 
     public function decodeBox(BlackBox $blackBox)
     {
-        $blackBox->getData($this->accessLevel);
+       return $blackBox->getData($this->accessLevel);
     }
 }

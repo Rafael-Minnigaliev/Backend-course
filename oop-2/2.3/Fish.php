@@ -2,7 +2,11 @@
 
 namespace WPTT\Oop\Fish;
 
-class Fish
+use WPTT\Oop\IBurning\IBurning;
+
+require_once 'IBurning.php';
+
+class Fish implements IBurning
 {
     private $name;
 
@@ -13,6 +17,6 @@ class Fish
 
     public function burnWith($flame)
     {
-        echo $this->name . ' ' . $flame->getFlame() . '<br>';
+        return $this->name . ' ' . $flame->getFlame() . '<br>';
     }
 }

@@ -10,9 +10,13 @@ class Plane
 {
     private $blackBox;
 
+    public function __construct($blackBox)
+    {
+        $this->blackBox = $blackBox;
+    }
+
     public function flyAndCrush()
     {
-        $this->blackBox = new BlackBox();
         $this->addLog('взлёт');
         $this->addLog('отказ двигателя');
         $this->addLog('стремительное падение');
